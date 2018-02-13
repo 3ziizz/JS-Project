@@ -1,0 +1,176 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>final</title>
+    <link rel="stylesheet" type="text/css" href="css/c.css">
+    <link rel="stylesheet"  href="css/game main page.css" />
+    <link rel="stylesheet"  href="css/page3.css" />
+</head>
+<body  align = "center" >
+    <!start page>
+    <div id="start" style="display:initial" name="main_page" >
+        <div id="start1" width=50% height=100% align=center>
+            <button class="button button1" >START</button><br>
+            <button class="button button2"  >OPTIONS</button><br>
+            <button class="button button4"  >INSTRUCTION</button><br>
+            
+            <button class="button button3">EXIT</button>
+        </div>
+            
+        <div id="volume-btn">
+            <button type="button" style=" background-color: Transparent;border:none" id="mybtn1" >
+            <img src="img/volume.png" width="40px" height="40px"/>
+        </button>
+        </div>
+        <div align="center" style="display:none">
+            <audio controls src="audio/sleep.mp3" id="myaudio1">  
+        </div>
+Copyright&copy;
+    ITI-Telecom38-&reg;</br>
+    Copyright&copy;
+   Mohamed AbdelAziz-Arwa-Omnia-Raghda-Nady-&reg;
+    </div>
+
+    <!game page>
+    <div id="game" style="display:none">
+            <div id="main">
+                    <h2 id="score">Highest Score :</h2>
+                    <h2 id="currscore">Score:</h2>
+                    <h2 id="level">Level :</h2>
+                    <h2 id="badge">Badge :</h2>
+                    <img id="first-heart" src="img/live.png"/>
+                    <img id="second-heart" src="img/live.png"/>
+                    <img id="third-heart" src="img/live.png"/>
+            
+            
+                     <div align="center" style="display:none">
+                        <audio controls src="audio/sleep.mp3" id="myaudio1">
+                        </div>
+                        
+                        <div align="center" style="display:none">
+                        <audio controls src="audio/Button_Push.mp3" id="crash">
+                        </div>
+            
+                     <div id="volume-btn">
+                        <button type="button" style=" background-color: Transparent;border: none" id="mybtn2" >
+                                <img src="img/volume.png" width="40px" height="40px"/>
+                        </button>
+                    </div>
+                    <img id="box" src="img/goal.png">
+                
+                    
+            
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p>you got a golden medal</p>
+                    </div>
+                </div>
+
+                <div id="myModal_1" class="modal_1">
+                    <div class="modal-content_1">
+                      <span class="close_1">&times;</span>
+                      <h1  id="over">Game Over</h1>
+                    </div>
+                </div>
+
+                <!script src="js/move-box.js"></script>
+                <!script src="js/score.js"></script>
+                <!script src="js/collision detection.js"></script>
+                <!script src="js/drop-ball.js"><!/script>
+                <!script src="js/modal.js"></script>
+                
+                
+    </div>
+    <!/*option page*/>
+     <div id="option" style="display:none">
+            
+            <br>
+            <br>
+            <br>
+            <h1 align="center" id="label" >The Game Options</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+             <div id="volume-btn">
+                        <button type="button" style=" background-color: Transparent;border:none" id="mybtn" >
+                                <img src="img/volume.png" width="40px" height="40px"/>
+                        </button>
+             </div>
+            
+            <div align="center" style="display:none">
+            <audio controls src="audio/sleep.mp3" id="myaudio1">
+              
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <form action="form_read.txt" method="get" align="center" id="form1" target="_blank">
+            <div id="radio-button-wrapper" >
+                    <h2 id="character">Choose Your Character</h2>
+                    <br>
+            
+                <span class="image-radio">
+                    <input  type="radio"   name="charc" value="Goal" id="football"> <img src="img/bal.png"  height="56" width="56">
+                </span>
+                <span class="image-radio">
+                    <input  type="radio"  name="charc" value="basket" id="basketball"> <img src="img/basketball.png" height="50" width="50">
+                    
+                </span>
+            
+                <span class="image-radio">
+                    <input  type="radio"  name="charc" value="rabbit" id="carrot"> <img src="img/carrot.png" height="50" width="50">
+                    
+                </span>
+            </div>
+            
+            
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <button style="margin:20px" type="submit" form="form1" value="Submit">Save Your Choice</button>
+            
+            <button style="margin:20px" type="reset"   form="form1" value="Reset">Reset</button>
+            </form>
+            <!script src="js/page3.js"><!/script>
+            
+    
+
+     </div>
+     <!exit page>
+      <div id="exit" style="display: none">
+            <h1 align="center" >Are you sure you want to leave?</h1>
+            <button type="button"><a href="bye.html">Yes</a></button>
+            <button type="button"><a href="last.html">No</a></button>
+      </div>
+      <! instruction page>
+
+      <div style="display: none" id="instruction" class="game_instruction" >  
+        <h1><p align="center">Instructions</p></h1>
+        
+        <h2><p>Use Right And Left Arrows To Collect As Much Items As You Can</p></h2>
+        <h2><p>Don't Miss any Ball As it Will Cost You A Life</p></h2>
+        <h2><p>Each gift will increase your Score By 5 points</p></h2> 
+        <h2><p>Go to Option Page To choose Your Character</p></h2>
+        <h2><p>As Levels Go Up ,Speed Will Increase,So BE READY</p></h2>
+        
+        
+      </div>
+                <script src="js/move-box.js"></script>
+                <script src="js/score.js"></script>
+                <script src="js/collision detection.js"></script>   
+                <script src="js/page3.js"></script>
+                <script src="js/navigate.js"></script>
+                <script src="js/modal.js"></script>
+
+</body>
+</html>
